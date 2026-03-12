@@ -875,7 +875,7 @@ Wan 2.6 supports native audio synchronization. Tips for best results:
 | Model | fal.ai Price | Atlas Cloud Price | You Save |
 |:------|:------------|:-----------------|:---------|
 | **Kling** | $0.224/sec (5s = $1.12) | from $0.204/s | **82% cheaper** |
-| **Seedance** | ~$0.26/video | from $0.222/s | **15% cheaper** |
+| **Seedance** | ~$0.26/video | from $0.044/s | **15% cheaper** |
 | **Wan 2.5** | $0.05/sec (5s = $0.25) | from $0.05/s | **80% cheaper** |
 | **Wan 2.6** | Similar pricing | from $0.07/s | Competitive |
 | **Veo 3** | $0.40/sec (8s = $3.20) | TBD | Coming soon |
