@@ -73,7 +73,7 @@
 Wan 1.0 (2024 Q3)
   └── Wan 2.1 (2024 Q4) — VBench 第一名，14B 与 1.3B 双版本 [开源, Apache 2.0]
        └── Wan 2.2 (2025 Q1) — 质量提升，Spicy 变体 🌶️ [开源, Apache 2.0]
-            ├── Wan 2.2 Spicy — NSFW/无审查生成 [开源]
+            ├── Wan 2.2 Spicy — NSFW/无审查生成 [闭源, Atlas Cloud LoRA 微调]
             └── Wan 2.5 (2025 Q2) — 音频同步，1080p，10秒 [闭源, 仅API]
                  └── Wan 2.6 (2025 Q3) — 多镜头，15秒，角色稳定性 [闭源, 仅API]
                       └── Wan 2.7 (即将推出！) — 🔜 首发于 Atlas Cloud
