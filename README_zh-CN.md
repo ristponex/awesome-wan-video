@@ -14,13 +14,13 @@
 
 **阿里巴巴 Wan 视频生成模型完全资源汇总**
 
-*全球排名第一的开源 AI 视频生成模型 — 精选工具、提示词、教程和资源。*
+*领先的 AI 视频生成模型系列 — 开源模型 (2.1/2.2) 与前沿商业 API (2.5/2.6)。精选工具、提示词、教程和资源。*
 
 [English](./README.md) | [简体中文](./README_zh-CN.md) | [日本語](./README_ja.md) | [한국어](./README_ko.md)
 
 ---
 
-🚀 **通过 API 生成 Wan 视频 — 低至 $0.03/次** 🚀
+🚀 **通过 API 生成 Wan 视频 — $0.03/秒起** 🚀
 
 [![在 Atlas Cloud 上试用](https://img.shields.io/badge/立即试用-Atlas%20Cloud-blue?style=for-the-badge&logo=cloud)](https://www.atlascloud.ai?ref=JPM683)
 
@@ -56,12 +56,12 @@
 
 ## 🌊 关于 Wan 模型
 
-**Wan** 是阿里巴巴推出的开源视频生成模型系列，从首次亮相到登顶 **VBench 排行榜第一名**，Wan 持续突破开源视频 AI 的边界。
+**Wan** 是阿里巴巴推出的视频生成模型系列。其中 Wan 2.1 和 2.2 是**完全开源的**（Apache 2.0 许可），权重可在 Hugging Face 下载并自部署；而 Wan 2.5 和 2.6 是**闭源商业 API** 模型，提供更先进的功能。从首次亮相到登顶 **VBench 排行榜第一名**，Wan 持续突破视频 AI 的边界。
 
 ### 为什么选择 Wan？
 
 - **🏆 VBench 冠军** — Wan 2.1 在 VBench 上取得 **86.22%** 的得分，超越 Sora (84.28%)、Luma (83.61%) 等所有模型
-- **🔓 完全开源** — 与 Sora、可灵、Runway 不同，Wan 模型完全开源，权重可在 Hugging Face 下载
+- **🔓 开源 (2.1/2.2)** — 与 Sora、可灵、Runway 不同，Wan 2.1/2.2 完全开源（Apache 2.0），权重可在 Hugging Face 下载，支持自部署
 - **💻 消费级 GPU 友好** — 1.3B 版本仅需 **8.19GB 显存**，单卡 RTX 3060 即可运行
 - **📊 海量训练数据** — 基于 **15 亿视频** + **100 亿图片** 训练
 - **🔥 220 万+ 下载量** — 全球 AI 社区在 Hugging Face 和 ModelScope 上验证
@@ -71,28 +71,28 @@
 
 ```
 Wan 1.0 (2024 Q3)
-  └── Wan 2.1 (2024 Q4) — VBench 第一名，14B 与 1.3B 双版本
-       └── Wan 2.2 (2025 Q1) — 质量提升，Spicy 变体 🌶️
-            ├── Wan 2.2 Spicy — NSFW/无审查生成
-            └── Wan 2.5 (2025 Q2) — 音频同步，1080p，10秒
-                 └── Wan 2.6 (2025 Q3) — 多镜头，15秒，角色稳定性
+  └── Wan 2.1 (2024 Q4) — VBench 第一名，14B 与 1.3B 双版本 [开源, Apache 2.0]
+       └── Wan 2.2 (2025 Q1) — 质量提升，Spicy 变体 🌶️ [开源, Apache 2.0]
+            ├── Wan 2.2 Spicy — NSFW/无审查生成 [开源]
+            └── Wan 2.5 (2025 Q2) — 音频同步，1080p，10秒 [闭源, 仅API]
+                 └── Wan 2.6 (2025 Q3) — 多镜头，15秒，角色稳定性 [闭源, 仅API]
                       └── Wan 2.7 (即将推出！) — 🔜 首发于 Atlas Cloud
 ```
 
 ### 与闭源模型的关键差异
 
-| 特性 | Wan 2.6 | Sora | 可灵 | Runway Gen-3 |
-|------|---------|------|------|---------------|
-| 开源 | ✅ | ❌ | ❌ | ❌ |
-| 本地部署 | ✅ | ❌ | ❌ | ❌ |
-| 最高分辨率 | 1920×1080 | 1920×1080 | 1920×1080 | 1920×1080 |
-| 最长时长 | 15秒 | 20秒 | 10秒 | 10秒 |
-| 原生音频 | ✅ | ✅ | ❌ | ❌ |
-| 多镜头 | ✅ | ❌ | ❌ | ❌ |
-| NSFW 支持 | ✅ (Spicy) | ❌ | ❌ | ❌ |
-| 每视频价格 | 低至 $0.03 | $0.50+ | $0.30+ | $0.50+ |
-| 消费级 GPU | ✅ (1.3B) | 不适用 | 不适用 | 不适用 |
-| 微调支持 | ✅ LoRA | ❌ | ❌ | ❌ |
+| 特性 | Wan 2.1/2.2 | Wan 2.5/2.6 | Sora | 可灵 | Runway Gen-3 |
+|------|-------------|-------------|------|------|---------------|
+| 开源 | ✅ Apache 2.0 | ❌ 仅 API | ❌ | ❌ | ❌ |
+| 本地部署 | ✅ | ❌ | ❌ | ❌ | ❌ |
+| 最高分辨率 | 720p | 1920×1080 | 1920×1080 | 1920×1080 | 1920×1080 |
+| 最长时长 | 5秒 | 15秒 | 20秒 | 10秒 | 10秒 |
+| 原生音频 | ❌ | ✅ | ✅ | ❌ | ❌ |
+| 多镜头 | ❌ | ✅ | ❌ | ❌ | ❌ |
+| NSFW 支持 | ✅ (Spicy) | ❌ | ❌ | ❌ | ❌ |
+| 每视频价格 | 自部署 | 低至 $0.03 | $0.50+ | $0.30+ | $0.50+ |
+| 消费级 GPU | ✅ (1.3B) | 不适用 | 不适用 | 不适用 | 不适用 |
+| 微调支持 | ✅ LoRA | ❌ | ❌ | ❌ | ❌ |
 
 ---
 
@@ -100,8 +100,8 @@ Wan 1.0 (2024 Q3)
 
 | 版本 | 参数量 | 分辨率 | 时长 | 音频 | 多镜头 | 开源 | NSFW | API 价格 |
 |------|--------|--------|------|------|--------|------|------|----------|
-| **Wan 2.6** | 14B | 1080p | 最长 15秒 | ✅ | ✅ | ✅ | ❌ | $0.07 |
-| **Wan 2.5** | 14B | 1080p | 最长 10秒 | ✅ | ❌ | ✅ | ❌ | 更低 |
+| **Wan 2.6** | 14B | 1080p | 最长 15秒 | ✅ | ✅ | ❌ (仅API) | ❌ | $0.07 |
+| **Wan 2.5** | 14B | 1080p | 最长 10秒 | ✅ | ❌ | ❌ (仅API) | ❌ | 更低 |
 | **Wan 2.2 Spicy** 🌶️ | 14B | 720p | 最长 8秒 | ❌ | ❌ | ✅ | ✅ | **$0.03** |
 | **Wan 2.2** | 14B / 1.3B | 720p | 最长 5秒 | ❌ | ❌ | ✅ | ❌ | — |
 | **Wan 2.1** | 14B / 1.3B | 720p | 最长 5秒 | ❌ | ❌ | ✅ | ❌ | — |
@@ -110,7 +110,7 @@ Wan 1.0 (2024 Q3)
 
 | 模型 | 类型 | 价格 | 亮点 |
 |------|------|------|------|
-| Wan 2.6 T2V | 文生视频 | $0.07/次（7折） | 5/10/15秒，最高 1920×1080，多镜头，音频 |
+| Wan 2.6 T2V | 文生视频 | $0.07/秒起（7折） | 5/10/15秒，最高 1920×1080，多镜头，音频 |
 | Wan 2.6 I2V | 图生视频 | 可用 | 高保真图片动画 |
 | Wan 2.6 I2V Flash | 图生视频 | 更快更便宜 | 速度优化版 |
 | Wan 2.6 V2V | 视频转视频 | 可用 | 风格迁移与编辑 |
@@ -119,11 +119,13 @@ Wan 1.0 (2024 Q3)
 | Wan 2.5 T2V | 文生视频 | 可用 | 稳定视频生成 |
 | Wan 2.5 I2V | 图生视频 | 可用 | 稳定图片动画 |
 | Wan 2.5 Fast | 文生视频 | 可用 | 速度优化版 |
-| Wan 2.2 Spicy I2V 🌶️ | 图生视频 | **$0.03/次** | 无审查生成 |
+| Wan 2.2 Spicy I2V 🌶️ | 图生视频 | **$0.03/秒起** | 无审查生成 |
 | Wan 2.2 Spicy I2V LoRA | 图生视频 | 可用 | 支持 LoRA 微调 |
 | Wan 2.2 换脸 | 视频特效 | 可用 | animate-mix 人脸替换 |
 | Wan 2.2 图片转动画 | 动画 | 可用 | animate-move 动作迁移 |
 | Van 2.6 / 2.5 | 优化版 | 可用 | Atlas Cloud 优化版 |
+
+> *以上价格为每秒生成视频的起步价，实际费用取决于分辨率、时长和所选模型。*
 
 > 🎁 **新用户优惠：** 首次充值额外赠送 25%（最高 $100 奖金）。[立即注册 →](https://www.atlascloud.ai?ref=JPM683)
 
@@ -156,7 +158,7 @@ curl -X POST "https://api.atlascloud.ai/v1/video/generate" \
 <summary><b>cURL 示例 — Wan 2.2 Spicy（无审查）</b></summary>
 
 ```bash
-# Wan 2.2 Spicy 无审查图片转视频 API 调用 — 仅需 $0.03/次
+# Wan 2.2 Spicy 无审查图片转视频 API 调用 — 仅需 $0.03/秒起
 curl -X POST "https://api.atlascloud.ai/v1/video/generate" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
@@ -401,7 +403,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **提示词：** `Renaissance-style figure study, soft diffused lighting on skin, classical painting composition, marble sculpture coming to life with subtle breathing movement, warm golden tones, museum gallery setting, artistic and elegant`
 - **模型：** Wan 2.2 Spicy I2V
-- **价格：** $0.03/次
+- **价格：** $0.03/秒起
 - **技巧：** 搭配古典画作或雕塑参考图片效果最佳。
 
 </details>
@@ -411,7 +413,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **提示词：** `High fashion editorial, model in sheer flowing fabric, dramatic wind effect, stark white studio lighting, Helmut Newton inspired, bold poses transitioning fluidly, haute couture, magazine quality`
 - **模型：** Wan 2.2 Spicy I2V
-- **价格：** $0.03/次
+- **价格：** $0.03/秒起
 - **技巧：** 使用 LoRA 变体可在多次生成中保持一致风格。
 
 </details>
@@ -421,7 +423,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **提示词：** `Contemporary dance performance, fluid body movement, dramatic stage lighting, dancer's silhouette against colored backdrop, artistic expression through motion, modern ballet, intimate camera angles, professional choreography`
 - **模型：** Wan 2.2 Spicy I2V
-- **价格：** $0.03/次
+- **价格：** $0.03/秒起
 - **技巧：** 图生视频模式效果最佳 — 提供一张舞者参考图片。
 
 </details>
@@ -431,7 +433,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **提示词：** `Birth of Venus reimagined, goddess emerging from ocean waves, flowing golden hair, seashells and foam, Pre-Raphaelite painting style, ethereal glow, mythological beauty, Botticelli inspired but cinematic`
 - **模型：** Wan 2.2 Spicy I2V
-- **价格：** $0.03/次
+- **价格：** $0.03/秒起
 - **技巧：** 搭配古典艺术参考图片效果极佳。
 
 </details>
@@ -441,7 +443,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **提示词：** `Cyberpunk character in revealing neon-lit outfit, holographic tattoos glowing on skin, futuristic nightclub setting, pulsing LED lights, confident walking motion, sci-fi fashion, Blade Runner 2049 aesthetic`
 - **模型：** Wan 2.2 Spicy I2V LoRA
-- **价格：** $0.03/次
+- **价格：** $0.03/秒起
 - **技巧：** 使用 LoRA 可在不同场景中保持角色外观一致。
 
 </details>
@@ -852,10 +854,12 @@ Wan 2.6 支持原生音频同步。最佳效果技巧：
 
 | 提供商 | Wan 2.6 T2V | Wan 2.5 T2V | Wan Spicy 🌶️ | 主要特点 |
 |--------|-------------|-------------|---------------|---------|
-| **Atlas Cloud** ⭐ | **$0.07/次**（7折） | 更低 | **$0.03/次** | ✅ 全模型、NSFW、LoRA、V2V、多镜头 |
+| **Atlas Cloud** ⭐ | **$0.07/秒起**（7折） | 更低 | **$0.03/秒起** | ✅ 全模型、NSFW、LoRA、V2V、多镜头 |
 | 阿里云 | $0.10+ | $0.08+ | 不可用 | ⚠️ 区域限制，无 NSFW |
 | Replicate | $0.15+ | $0.12+ | 有限 | 基础 API |
 | 自建服务器 | GPU 时费 | GPU 时费 | GPU 时费 | ✅ 完全控制，❌ 维护负担 |
+
+> *以上价格为每秒生成视频的起步价，实际费用取决于分辨率、时长和所选模型。*
 
 ### 成本分析示例
 
@@ -872,13 +876,15 @@ Wan 2.6 支持原生音频同步。最佳效果技巧：
 
 | 模型 | fal.ai 价格 | Atlas Cloud 价格 | 节省幅度 |
 |:------|:------------|:-----------------|:---------|
-| **Kling** | $0.224/秒 (5秒 = $1.12) | $0.204/次 | **便宜 82%** |
-| **Seedance** | ~$0.26/视频 | $0.222/次 | **便宜 15%** |
-| **Wan 2.5** | $0.05/秒 (5秒 = $0.25) | $0.05/次 | **便宜 80%** |
-| **Wan 2.6** | 相似定价 | $0.07/次 | 极具竞争力 |
+| **Kling** | $0.224/秒 (5秒 = $1.12) | $0.204/秒起 | **便宜 82%** |
+| **Seedance** | ~$0.26/视频 | $0.222/秒起 | **便宜 15%** |
+| **Wan 2.5** | $0.05/秒 (5秒 = $0.25) | $0.05/秒起 | **便宜 80%** |
+| **Wan 2.6** | 相似定价 | $0.07/秒起 | 极具竞争力 |
 | **Veo 3** | $0.40/秒 (8秒 = $3.20) | 即将推出 | 敬请期待 |
-| **Vidu Q3-Pro** | — | $0.06/次 | Atlas 独家 |
-| **Vidu Q3-Turbo** | — | $0.034/次 | Atlas 独家 |
+| **Vidu Q3-Pro** | — | $0.06/秒起 | Atlas 独家 |
+| **Vidu Q3-Turbo** | — | $0.034/秒起 | Atlas 独家 |
+
+> *以上价格为每秒生成视频的起步价，实际费用取决于分辨率、时长和所选模型。*
 
 > 💡 Atlas Cloud 提供所有主流视频模型的**最低价格**。从 fal.ai 切换到 Atlas Cloud，视频生成成本最高可节省 **82%**。
 
@@ -952,7 +958,7 @@ Wan 2.6 支持原生音频同步。最佳效果技巧：
 <details>
 <summary><b>什么是 Wan AI 视频模型？</b></summary>
 
-Wan 是阿里巴巴推出的开源视频生成模型系列。它使用扩散 Transformer 架构，基于 15 亿视频和 100 亿图片训练。Wan 2.1 模型在 **VBench 排行榜上排名第一**，得分 86.22%，超越 Sora (84.28%) 和 Luma (83.61%)。最新版本是 **Wan 2.6**，支持最长 15 秒的多镜头 1080p 视频生成，并带有原生音频同步。
+Wan 是阿里巴巴推出的视频生成模型系列。其中 Wan 2.1/2.2 是**开源的**（Apache 2.0），权重可在 Hugging Face 下载并自部署；Wan 2.5/2.6 是**闭源商业 API** 模型。它使用扩散 Transformer 架构，基于 15 亿视频和 100 亿图片训练。Wan 2.1 模型在 **VBench 排行榜上排名第一**，得分 86.22%，超越 Sora (84.28%) 和 Luma (83.61%)。最新版本是 **Wan 2.6**，支持最长 15 秒的多镜头 1080p 视频生成，并带有原生音频同步，通过 API 提供服务。
 
 </details>
 
@@ -975,15 +981,15 @@ Wan 是阿里巴巴推出的开源视频生成模型系列。它使用扩散 Tra
 
 | 特性 | Wan 2.6 | Seedance | 可灵 |
 |------|---------|----------|------|
-| 开源 | ✅ | ❌ | ❌ |
+| 开源 | ❌ (2.1/2.2 开源) | ❌ | ❌ |
 | 最长时长 | 15秒 | 10秒 | 10秒 |
 | 音频 | ✅ | ❌ | ❌ |
 | 多镜头 | ✅ | ❌ | ❌ |
 | NSFW | ✅ (Spicy) | ❌ | ❌ |
-| 本地部署 | ✅ | ❌ | ❌ |
+| 本地部署 | ❌ (2.1/2.2 可以) | ❌ | ❌ |
 | API 价格 | 低至 $0.03 | $0.20+ | $0.30+ |
 
-**Wan 优势：** 开源灵活性、定价、NSFW 支持、本地部署和功能丰富度。Seedance 和可灵在某些特定场景可能有不同的运动质量，但 Wan 的开源特性和快速迭代使其成为最佳长期选择。
+**Wan 优势：** 定价优势、NSFW 支持和功能丰富度。Wan 2.1/2.2 提供开源灵活性和本地部署能力，Wan 2.5/2.6 通过 API 提供前沿质量。Seedance 和可灵在某些特定场景可能有不同的运动质量，但 Wan 的快速迭代使其成为最佳长期选择。
 
 </details>
 
@@ -998,7 +1004,7 @@ Wan 是阿里巴巴推出的开源视频生成模型系列。它使用扩散 Tra
 | A100 40GB | 40GB | ✅（所有模型，批量） | 专业 |
 | A100 80GB | 80GB | ✅（所有模型，高批量） | 企业 |
 
-**预算建议：** 本地部署推荐 RTX 4090，或使用 [Atlas Cloud API](https://www.atlascloud.ai?ref=JPM683) 低至 $0.03/视频，无需硬件投资。
+**预算建议：** 本地部署推荐 RTX 4090，或使用 [Atlas Cloud API](https://www.atlascloud.ai?ref=JPM683) $0.03/秒起，无需硬件投资。
 
 </details>
 
@@ -1007,7 +1013,7 @@ Wan 是阿里巴巴推出的开源视频生成模型系列。它使用扩散 Tra
 
 **有！** **Wan 2.2 Spicy** 🌶️ 是无审查/NSFW 变体，允许不受限制的创意内容生成。可通过以下方式获取：
 
-- **Atlas Cloud API** 仅需 **$0.03/次** — 市面上最便宜的无审查视频生成 API
+- **Atlas Cloud API** 仅需 **$0.03/秒起** — 市面上最便宜的无审查视频生成 API
 - 模型：`alibaba/wan-2.2-spicy/image-to-video` 和 `alibaba/wan-2.2-spicy/image-to-video-lora`（支持 LoRA）
 
 [在 Atlas Cloud 上试用 Wan 2.2 Spicy →](https://www.atlascloud.ai?ref=JPM683)
@@ -1018,8 +1024,8 @@ Wan 是阿里巴巴推出的开源视频生成模型系列。它使用扩散 Tra
 <summary><b>通过 API 生成 Wan 视频需要多少钱？</b></summary>
 
 Atlas Cloud 提供最实惠的 Wan API 定价：
-- **Wan 2.2 Spicy（NSFW）：** $0.03/次
-- **Wan 2.6 T2V（1080p，15秒）：** $0.07/次（7折优惠）
+- **Wan 2.2 Spicy（NSFW）：** $0.03/秒起
+- **Wan 2.6 T2V（1080p，15秒）：** $0.07/秒起（7折优惠）
 - **Wan 2.5 系列：** 更低价格
 - 首次充值 **额外赠送 25%**（最高 $100）
 
@@ -1047,12 +1053,12 @@ Atlas Cloud 提供最实惠的 Wan API 定价：
 
 <div align="center">
 
-**从 Wan Spicy $0.03/视频到 Wan 2.6 $0.07 — 最实惠的 AI 视频生成 API。**
+**从 Wan Spicy $0.03/秒起到 Wan 2.6 $0.07/秒起 — 最实惠的 AI 视频生成 API。**
 
 | | |
 |---|---|
 | ✅ **无审查** | Wan 2.2 Spicy 释放不受限制的创意 |
-| ✅ **开源** | 本地运行或通过 API 使用 |
+| ✅ **开源 (2.1/2.2)** | 本地运行或通过 API 使用 |
 | ✅ **Wan 2.7 即将上线** | 在 Atlas Cloud 上抢先体验 |
 | ✅ **25% 奖金** | 首次充值额外赠送（最高 $100） |
 | ✅ **全模型覆盖** | T2V、I2V、V2V、图片编辑、换脸、动画 |
@@ -1113,7 +1119,7 @@ Atlas Cloud 提供最实惠的 Wan API 定价：
 
 <div align="center">
 
-**🌊 Wan — 让 AI 视频生成对每个人开放和可及 🌊**
+**🌊 Wan — 持续突破 AI 视频生成的边界 🌊**
 
 由开源社区用 ❤️ 打造
 

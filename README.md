@@ -14,13 +14,13 @@
 
 **The Complete Resource for Alibaba Wan Video Generation Models**
 
-*The world's #1 open-source AI video generation model — curated tools, prompts, guides, and resources.*
+*The world's leading AI video generation model family — open-source models (2.1/2.2) & cutting-edge API (2.5/2.6). Curated tools, prompts, guides, and resources.*
 
 [English](./README.md) | [简体中文](./README_zh-CN.md) | [日本語](./README_ja.md) | [한국어](./README_ko.md)
 
 ---
 
-🚀 **Generate Wan Videos via API — Starting from $0.03/request** 🚀
+🚀 **Generate Wan Videos via API — from $0.03/s** 🚀
 
 [![Try on Atlas Cloud](https://img.shields.io/badge/Try%20Now-Atlas%20Cloud-blue?style=for-the-badge&logo=cloud)](https://www.atlascloud.ai?ref=JPM683)
 
@@ -54,12 +54,12 @@
 
 ## 🌊 About Wan Models
 
-**Wan** is Alibaba's open-source video generation model series that has taken the AI world by storm. From its debut to its current **#1 position on the VBench leaderboard**, Wan has consistently pushed the boundaries of what's possible with open-source video AI.
+**Wan** is Alibaba's video generation model series that has taken the AI world by storm. Wan 2.1 and 2.2 are **fully open-source** (Apache 2.0) with weights available on Hugging Face, while Wan 2.5 and 2.6 are **closed-source commercial API** models with advanced capabilities. From its debut to its current **#1 position on the VBench leaderboard**, Wan has consistently pushed the boundaries of video AI.
 
 ### Why Wan?
 
 - **🏆 VBench Champion** — Wan 2.1 scored **86.22%** on VBench, surpassing Sora (84.28%), Luma (83.61%), and all other models
-- **🔓 Fully Open Source** — Unlike Sora, Kling, or Runway, Wan models are fully open-source with weights available on Hugging Face
+- **🔓 Open Source (2.1/2.2)** — Unlike Sora, Kling, or Runway, Wan 2.1/2.2 are fully open-source (Apache 2.0) with weights available on Hugging Face for self-deployment
 - **💻 Consumer GPU Friendly** — The 1.3B version needs only **8.19GB VRAM**, runs on a single RTX 3060
 - **📊 Massive Training Data** — Trained on **1.5 billion videos** + **10 billion images**
 - **🔥 2.2M+ Downloads** — Proven and validated by the global AI community on Hugging Face and ModelScope
@@ -69,28 +69,28 @@
 
 ```
 Wan 1.0 (2024 Q3)
-  └── Wan 2.1 (2024 Q4) — VBench #1, 14B & 1.3B
-       └── Wan 2.2 (2025 Q1) — Improved quality, Spicy variant 🌶️
-            ├── Wan 2.2 Spicy — NSFW/Uncensored generation
-            └── Wan 2.5 (2025 Q2) — Audio sync, 1080p, 10s
-                 └── Wan 2.6 (2025 Q3) — Multi-shot, 15s, character stability
+  └── Wan 2.1 (2024 Q4) — VBench #1, 14B & 1.3B [Open Source, Apache 2.0]
+       └── Wan 2.2 (2025 Q1) — Improved quality, Spicy variant 🌶️ [Open Source, Apache 2.0]
+            ├── Wan 2.2 Spicy — NSFW/Uncensored generation [Open Source]
+            └── Wan 2.5 (2025 Q2) — Audio sync, 1080p, 10s [Closed Source, API only]
+                 └── Wan 2.6 (2025 Q3) — Multi-shot, 15s, character stability [Closed Source, API only]
                       └── Wan 2.7 (Coming Soon!) — 🔜 First on Atlas Cloud
 ```
 
 ### Key Differentiators vs Closed-Source Models
 
-| Feature | Wan 2.6 | Sora | Kling | Runway Gen-3 |
-|---------|---------|------|-------|---------------|
-| Open Source | ✅ | ❌ | ❌ | ❌ |
-| Local Deployment | ✅ | ❌ | ❌ | ❌ |
-| Max Resolution | 1920×1080 | 1920×1080 | 1920×1080 | 1920×1080 |
-| Max Duration | 15s | 20s | 10s | 10s |
-| Native Audio | ✅ | ✅ | ❌ | ❌ |
-| Multi-Shot | ✅ | ❌ | ❌ | ❌ |
-| NSFW Support | ✅ (Spicy) | ❌ | ❌ | ❌ |
-| Price / Video | From $0.03 | $0.50+ | $0.30+ | $0.50+ |
-| Consumer GPU | ✅ (1.3B) | N/A | N/A | N/A |
-| Fine-tuning | ✅ LoRA | ❌ | ❌ | ❌ |
+| Feature | Wan 2.1/2.2 | Wan 2.5/2.6 | Sora | Kling | Runway Gen-3 |
+|---------|-------------|-------------|------|-------|---------------|
+| Open Source | ✅ Apache 2.0 | ❌ API only | ❌ | ❌ | ❌ |
+| Local Deployment | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Max Resolution | 720p | 1920×1080 | 1920×1080 | 1920×1080 | 1920×1080 |
+| Max Duration | 5s | 15s | 20s | 10s | 10s |
+| Native Audio | ❌ | ✅ | ✅ | ❌ | ❌ |
+| Multi-Shot | ❌ | ✅ | ❌ | ❌ | ❌ |
+| NSFW Support | ✅ (Spicy) | ❌ | ❌ | ❌ | ❌ |
+| Price / Video | Self-host | From $0.03 | $0.50+ | $0.30+ | $0.50+ |
+| Consumer GPU | ✅ (1.3B) | N/A | N/A | N/A | N/A |
+| Fine-tuning | ✅ LoRA | ❌ | ❌ | ❌ | ❌ |
 
 ---
 
@@ -98,8 +98,8 @@ Wan 1.0 (2024 Q3)
 
 | Version | Parameters | Resolution | Duration | Audio | Multi-Shot | Open Source | NSFW | API Price |
 |---------|-----------|------------|----------|-------|------------|------------|------|-----------|
-| **Wan 2.6** | 14B | 1080p | Up to 15s | ✅ | ✅ | ✅ | ❌ | $0.07 |
-| **Wan 2.5** | 14B | 1080p | Up to 10s | ✅ | ❌ | ✅ | ❌ | Lower |
+| **Wan 2.6** | 14B | 1080p | Up to 15s | ✅ | ✅ | ❌ (API only) | ❌ | $0.07 |
+| **Wan 2.5** | 14B | 1080p | Up to 10s | ✅ | ❌ | ❌ (API only) | ❌ | Lower |
 | **Wan 2.2 Spicy** 🌶️ | 14B | 720p | Up to 8s | ❌ | ❌ | ✅ | ✅ | **$0.03** |
 | **Wan 2.2** | 14B / 1.3B | 720p | Up to 5s | ❌ | ❌ | ✅ | ❌ | — |
 | **Wan 2.1** | 14B / 1.3B | 720p | Up to 5s | ❌ | ❌ | ✅ | ❌ | — |
@@ -108,7 +108,7 @@ Wan 1.0 (2024 Q3)
 
 | Model | Type | Price | Highlights |
 |-------|------|-------|------------|
-| Wan 2.6 T2V | Text-to-Video | $0.07/req (70% off) | 5/10/15s, up to 1920×1080, multi-shot, audio |
+| Wan 2.6 T2V | Text-to-Video | from $0.07/s (70% off) | 5/10/15s, up to 1920×1080, multi-shot, audio |
 | Wan 2.6 I2V | Image-to-Video | Available | High-fidelity image animation |
 | Wan 2.6 I2V Flash | Image-to-Video | Faster & cheaper | Speed-optimized variant |
 | Wan 2.6 V2V | Video-to-Video | Available | Style transfer & editing |
@@ -117,11 +117,13 @@ Wan 1.0 (2024 Q3)
 | Wan 2.5 T2V | Text-to-Video | Available | Reliable video generation |
 | Wan 2.5 I2V | Image-to-Video | Available | Stable image animation |
 | Wan 2.5 Fast | Text-to-Video | Available | Speed-optimized |
-| Wan 2.2 Spicy I2V 🌶️ | Image-to-Video | **$0.03/req** | Uncensored generation |
+| Wan 2.2 Spicy I2V 🌶️ | Image-to-Video | **from $0.03/s** | Uncensored generation |
 | Wan 2.2 Spicy I2V LoRA | Image-to-Video | Available | LoRA fine-tuning support |
 | Wan 2.2 Character Swap | Video Effects | Available | animate-mix face swap |
 | Wan 2.2 Image-to-Animation | Animation | Available | animate-move motion transfer |
 | Van 2.6 / 2.5 | Optimized | Available | Atlas Cloud optimized variants |
+
+> *Prices shown are starting prices per second of generated video. Actual cost depends on resolution, duration, and model selected.*
 
 > 🎁 **New user offer:** 25% bonus on first recharge (up to $100). [Sign up now →](https://www.atlascloud.ai?ref=JPM683)
 
@@ -154,7 +156,7 @@ curl -X POST "https://api.atlascloud.ai/v1/video/generate" \
 <summary><b>cURL Example — Wan 2.2 Spicy (Uncensored)</b></summary>
 
 ```bash
-# Wan 2.2 Spicy Uncensored Image-to-Video API call — only $0.03/request
+# Wan 2.2 Spicy Uncensored Image-to-Video API call — only from $0.03/s
 curl -X POST "https://api.atlascloud.ai/v1/video/generate" \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
@@ -399,7 +401,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **Prompt:** `Renaissance-style figure study, soft diffused lighting on skin, classical painting composition, marble sculpture coming to life with subtle breathing movement, warm golden tones, museum gallery setting, artistic and elegant`
 - **Model:** Wan 2.2 Spicy I2V
-- **Price:** $0.03/request
+- **Price:** from $0.03/s
 - **Tips:** Pair with a classical painting or sculpture reference image for best results.
 
 </details>
@@ -409,7 +411,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **Prompt:** `High fashion editorial, model in sheer flowing fabric, dramatic wind effect, stark white studio lighting, Helmut Newton inspired, bold poses transitioning fluidly, haute couture, magazine quality`
 - **Model:** Wan 2.2 Spicy I2V
-- **Price:** $0.03/request
+- **Price:** from $0.03/s
 - **Tips:** Use LoRA variant for consistent style across multiple generations.
 
 </details>
@@ -419,7 +421,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **Prompt:** `Contemporary dance performance, fluid body movement, dramatic stage lighting, dancer's silhouette against colored backdrop, artistic expression through motion, modern ballet, intimate camera angles, professional choreography`
 - **Model:** Wan 2.2 Spicy I2V
-- **Price:** $0.03/request
+- **Price:** from $0.03/s
 - **Tips:** Image-to-video works best — provide a dancer reference image.
 
 </details>
@@ -429,7 +431,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **Prompt:** `Birth of Venus reimagined, goddess emerging from ocean waves, flowing golden hair, seashells and foam, Pre-Raphaelite painting style, ethereal glow, mythological beauty, Botticelli inspired but cinematic`
 - **Model:** Wan 2.2 Spicy I2V
-- **Price:** $0.03/request
+- **Price:** from $0.03/s
 - **Tips:** Works beautifully with classical art reference images.
 
 </details>
@@ -439,7 +441,7 @@ docker run --gpus all -p 8080:8080 wan-video
 
 - **Prompt:** `Cyberpunk character in revealing neon-lit outfit, holographic tattoos glowing on skin, futuristic nightclub setting, pulsing LED lights, confident walking motion, sci-fi fashion, Blade Runner 2049 aesthetic`
 - **Model:** Wan 2.2 Spicy I2V LoRA
-- **Price:** $0.03/request
+- **Price:** from $0.03/s
 - **Tips:** Use LoRA for consistent character appearance across scenes.
 
 </details>
@@ -850,10 +852,12 @@ Wan 2.6 supports native audio synchronization. Tips for best results:
 
 | Provider | Wan 2.6 T2V | Wan 2.5 T2V | Wan Spicy 🌶️ | Key Features |
 |----------|-------------|-------------|---------------|--------------|
-| **Atlas Cloud** ⭐ | **$0.07/req** (70% off) | Lower | **$0.03/req** | ✅ All models, NSFW, LoRA, V2V, Multi-shot |
+| **Atlas Cloud** ⭐ | **from $0.07/s** (70% off) | Lower | **from $0.03/s** | ✅ All models, NSFW, LoRA, V2V, Multi-shot |
 | Alibaba Cloud | $0.10+ | $0.08+ | N/A | ⚠️ Region restricted, no NSFW |
 | Replicate | $0.15+ | $0.12+ | Limited | Basic API only |
 | Self-hosted | GPU cost/hr | GPU cost/hr | GPU cost/hr | ✅ Full control, ❌ maintenance burden |
+
+> *Prices shown are starting prices per second of generated video. Actual cost depends on resolution, duration, and model selected.*
 
 ### Cost Breakdown Example
 
@@ -870,13 +874,15 @@ Wan 2.6 supports native audio synchronization. Tips for best results:
 
 | Model | fal.ai Price | Atlas Cloud Price | You Save |
 |:------|:------------|:-----------------|:---------|
-| **Kling** | $0.224/sec (5s = $1.12) | $0.204/req | **82% cheaper** |
-| **Seedance** | ~$0.26/video | $0.222/req | **15% cheaper** |
-| **Wan 2.5** | $0.05/sec (5s = $0.25) | $0.05/req | **80% cheaper** |
-| **Wan 2.6** | Similar pricing | $0.07/req | Competitive |
+| **Kling** | $0.224/sec (5s = $1.12) | from $0.204/s | **82% cheaper** |
+| **Seedance** | ~$0.26/video | from $0.222/s | **15% cheaper** |
+| **Wan 2.5** | $0.05/sec (5s = $0.25) | from $0.05/s | **80% cheaper** |
+| **Wan 2.6** | Similar pricing | from $0.07/s | Competitive |
 | **Veo 3** | $0.40/sec (8s = $3.20) | TBD | Coming soon |
-| **Vidu Q3-Pro** | — | $0.06/req | Atlas exclusive |
-| **Vidu Q3-Turbo** | — | $0.034/req | Atlas exclusive |
+| **Vidu Q3-Pro** | — | from $0.06/s | Atlas exclusive |
+| **Vidu Q3-Turbo** | — | from $0.034/s | Atlas exclusive |
+
+> *Prices shown are starting prices per second of generated video. Actual cost depends on resolution, duration, and model selected.*
 
 > 💡 Atlas Cloud offers the **lowest prices** across all major video models. Switch from fal.ai and save up to **82%** on your video generation costs.
 
@@ -950,7 +956,7 @@ Wan 2.6 supports native audio synchronization. Tips for best results:
 <details>
 <summary><b>What is the Wan AI video model?</b></summary>
 
-Wan is Alibaba's open-source video generation model series. It uses a diffusion transformer architecture trained on 1.5 billion videos and 10 billion images. The Wan 2.1 model achieved the **#1 position on the VBench leaderboard** with a score of 86.22%, surpassing Sora (84.28%) and Luma (83.61%). The latest version is **Wan 2.6**, which supports multi-shot 1080p video generation up to 15 seconds with native audio synchronization.
+Wan is Alibaba's video generation model series. Wan 2.1 and 2.2 are **open-source (Apache 2.0)** with weights available on Hugging Face for self-deployment, while Wan 2.5 and 2.6 are **closed-source commercial API** models. It uses a diffusion transformer architecture trained on 1.5 billion videos and 10 billion images. The Wan 2.1 model achieved the **#1 position on the VBench leaderboard** with a score of 86.22%, surpassing Sora (84.28%) and Luma (83.61%). The latest version is **Wan 2.6**, which supports multi-shot 1080p video generation up to 15 seconds with native audio synchronization, available via API.
 
 </details>
 
@@ -973,15 +979,15 @@ See the [Local Deployment Guide](#-local-deployment-guide) for step-by-step inst
 
 | Feature | Wan 2.6 | Seedance | Kling |
 |---------|---------|----------|-------|
-| Open Source | ✅ | ❌ | ❌ |
+| Open Source | ❌ (2.1/2.2 are open) | ❌ | ❌ |
 | Max Duration | 15s | 10s | 10s |
 | Audio | ✅ | ❌ | ❌ |
 | Multi-Shot | ✅ | ❌ | ❌ |
 | NSFW | ✅ (Spicy) | ❌ | ❌ |
-| Local Deploy | ✅ | ❌ | ❌ |
+| Local Deploy | ❌ (2.1/2.2 can) | ❌ | ❌ |
 | API Price | From $0.03 | $0.20+ | $0.30+ |
 
-**Wan wins on**: open-source flexibility, pricing, NSFW support, local deployment, and features. Seedance and Kling may have slightly different motion quality for specific use cases, but Wan's open-source nature and rapid iteration make it the best long-term choice.
+**Wan wins on**: pricing, NSFW support, and features. Wan 2.1/2.2 offer open-source flexibility with local deployment, while Wan 2.5/2.6 provide cutting-edge quality via API. Seedance and Kling may have slightly different motion quality for specific use cases, but Wan's rapid iteration makes it the best long-term choice.
 
 </details>
 
@@ -996,7 +1002,7 @@ See the [Local Deployment Guide](#-local-deployment-guide) for step-by-step inst
 | A100 40GB | 40GB | ✅ (all models, batch) | Professional |
 | A100 80GB | 80GB | ✅ (all models, high batch) | Enterprise |
 
-**Budget recommendation:** RTX 4090 for local deployment, or use [Atlas Cloud API](https://www.atlascloud.ai?ref=JPM683) starting at $0.03/video if you don't want to invest in hardware.
+**Budget recommendation:** RTX 4090 for local deployment, or use [Atlas Cloud API](https://www.atlascloud.ai?ref=JPM683) from $0.03/s if you don't want to invest in hardware.
 
 </details>
 
@@ -1005,7 +1011,7 @@ See the [Local Deployment Guide](#-local-deployment-guide) for step-by-step inst
 
 **Yes!** The **Wan 2.2 Spicy** 🌶️ is an uncensored/NSFW variant that allows unrestricted creative content generation. It's available via:
 
-- **Atlas Cloud API** at just **$0.03/request** — the cheapest uncensored video generation API available
+- **Atlas Cloud API** at just **from $0.03/s** — the cheapest uncensored video generation API available
 - Models: `alibaba/wan-2.2-spicy/image-to-video` and `alibaba/wan-2.2-spicy/image-to-video-lora` (with LoRA support)
 
 [Try Wan 2.2 Spicy on Atlas Cloud →](https://www.atlascloud.ai?ref=JPM683)
@@ -1016,8 +1022,8 @@ See the [Local Deployment Guide](#-local-deployment-guide) for step-by-step inst
 <summary><b>How much does Wan video generation cost via API?</b></summary>
 
 Atlas Cloud offers the most affordable Wan API pricing:
-- **Wan 2.2 Spicy (NSFW):** $0.03/request
-- **Wan 2.6 T2V (1080p, 15s):** $0.07/request (70% discount)
+- **Wan 2.2 Spicy (NSFW):** from $0.03/s
+- **Wan 2.6 T2V (1080p, 15s):** from $0.07/s (70% discount)
 - **Wan 2.5 variants:** Even lower pricing
 - **25% bonus** on first recharge (up to $100)
 
@@ -1045,12 +1051,12 @@ Compare this to Sora ($0.50+/video) or Runway ($0.50+/video). [Get started →](
 
 <div align="center">
 
-**From $0.03/video with Wan Spicy to $0.07 for Wan 2.6 — the most affordable AI video generation API.**
+**From $0.03/s with Wan Spicy to $0.07/s for Wan 2.6 — the most affordable AI video generation API.**
 
 | | |
 |---|---|
 | ✅ **Uncensored** | Wan 2.2 Spicy for unrestricted creativity |
-| ✅ **Open Source** | Run locally or use via API |
+| ✅ **Open Source (2.1/2.2)** | Run locally or use via API |
 | ✅ **Wan 2.7 Coming Soon** | Be the first to access on Atlas Cloud |
 | ✅ **25% Bonus** | On first top-up (up to $100 bonus) |
 | ✅ **All Models** | T2V, I2V, V2V, Image-Edit, Character Swap, Animation |
@@ -1111,7 +1117,7 @@ This work is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-**🌊 Wan — Making AI Video Generation Open and Accessible to Everyone 🌊**
+**🌊 Wan — Pushing the Boundaries of AI Video Generation 🌊**
 
 Made with ❤️ by the open-source community
 
