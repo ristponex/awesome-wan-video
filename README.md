@@ -22,7 +22,7 @@
 
 🚀 **Generate Wan Videos via API — from $0.03/s** 🚀
 
-[![Try on Atlas Cloud](https://img.shields.io/badge/Try%20Now-Atlas%20Cloud-blue?style=for-the-badge&logo=cloud)](https://www.atlascloud.ai?ref=JPM683)
+[![Try on Atlas Cloud](https://img.shields.io/badge/Try%20Now-Atlas%20Cloud-blue?style=for-the-badge&logo=cloud)](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video)
 
 *25% bonus on first recharge (up to $100) • Uncensored Wan Spicy available • Wan 2.7 coming soon!*
 
@@ -125,7 +125,7 @@ Wan 1.0 (2024 Q3)
 
 > *Prices shown are starting prices per second of generated video. Actual cost depends on resolution, duration, and model selected.*
 
-> 🎁 **New user offer:** 25% bonus on first recharge (up to $100). [Sign up now →](https://www.atlascloud.ai?ref=JPM683)
+> 🎁 **New user offer:** 25% bonus on first recharge (up to $100). [Sign up now →](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video)
 
 ---
 
@@ -868,7 +868,7 @@ Wan 2.6 supports native audio synchronization. Tips for best results:
 | Commercial Production | Wan 2.6 T2V | 100 | **$7/mo** | ~$500/mo |
 | Hobbyist | Wan 2.5 T2V | 50 | **<$5/mo** | ~$500/mo |
 
-> 💡 **Pro tip:** [Sign up for Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) and get **25% bonus on your first recharge** (up to $100 bonus). That's up to 1,785 Wan Spicy videos or 1,785+ Wan 2.6 videos for $100+$25 bonus!
+> 💡 **Pro tip:** [Sign up for Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video) and get **25% bonus on your first recharge** (up to $100 bonus). That's up to 1,785 Wan Spicy videos or 1,785+ Wan 2.6 videos for $100+$25 bonus!
 
 ### Atlas Cloud vs fal.ai Pricing
 
@@ -1002,7 +1002,7 @@ See the [Local Deployment Guide](#-local-deployment-guide) for step-by-step inst
 | A100 40GB | 40GB | ✅ (all models, batch) | Professional |
 | A100 80GB | 80GB | ✅ (all models, high batch) | Enterprise |
 
-**Budget recommendation:** RTX 4090 for local deployment, or use [Atlas Cloud API](https://www.atlascloud.ai?ref=JPM683) from $0.03/s if you don't want to invest in hardware.
+**Budget recommendation:** RTX 4090 for local deployment, or use [Atlas Cloud API](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video) from $0.03/s if you don't want to invest in hardware.
 
 </details>
 
@@ -1014,7 +1014,7 @@ See the [Local Deployment Guide](#-local-deployment-guide) for step-by-step inst
 - **Atlas Cloud API** at just **from $0.03/s** — the cheapest uncensored video generation API available
 - Models: `alibaba/wan-2.2-spicy/image-to-video` and `alibaba/wan-2.2-spicy/image-to-video-lora` (with LoRA support)
 
-[Try Wan 2.2 Spicy on Atlas Cloud →](https://www.atlascloud.ai?ref=JPM683)
+[Try Wan 2.2 Spicy on Atlas Cloud →](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video)
 
 </details>
 
@@ -1027,7 +1027,7 @@ Atlas Cloud offers the most affordable Wan API pricing:
 - **Wan 2.5 variants:** Even lower pricing
 - **25% bonus** on first recharge (up to $100)
 
-Compare this to Sora ($0.50+/video) or Runway ($0.50+/video). [Get started →](https://www.atlascloud.ai?ref=JPM683)
+Compare this to Sora ($0.50+/video) or Runway ($0.50+/video). [Get started →](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video)
 
 </details>
 
@@ -1041,7 +1041,7 @@ Compare this to Sora ($0.50+/video) or Runway ($0.50+/video). [Get started →](
 <details>
 <summary><b>When is Wan 2.7 coming out?</b></summary>
 
-**Wan 2.7** is currently in development and will be available soon. Atlas Cloud will be among the first platforms to offer Wan 2.7 via API. [Sign up for Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) to be notified when Wan 2.7 launches.
+**Wan 2.7** is currently in development and will be available soon. Atlas Cloud will be among the first platforms to offer Wan 2.7 via API. [Sign up for Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video) to be notified when Wan 2.7 launches.
 
 </details>
 
@@ -1063,7 +1063,7 @@ Compare this to Sora ($0.50+/video) or Runway ($0.50+/video). [Get started →](
 
 <br />
 
-[![Try Wan on Atlas Cloud](https://img.shields.io/badge/👉%20Try%20Wan%20on%20Atlas%20Cloud-blue?style=for-the-badge&logo=cloud&logoColor=white)](https://www.atlascloud.ai?ref=JPM683)
+[![Try Wan on Atlas Cloud](https://img.shields.io/badge/👉%20Try%20Wan%20on%20Atlas%20Cloud-blue?style=for-the-badge&logo=cloud&logoColor=white)](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=awesome-wan-video)
 
 *No GPU required. No setup. Just prompts and videos.*
 
